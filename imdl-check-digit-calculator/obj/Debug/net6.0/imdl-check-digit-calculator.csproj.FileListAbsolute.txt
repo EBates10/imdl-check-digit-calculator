@@ -1,0 +1,15 @@
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\bin\Debug\net6.0\imdl-check-digit-calculator.exe
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\bin\Debug\net6.0\imdl-check-digit-calculator.deps.json
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\bin\Debug\net6.0\imdl-check-digit-calculator.runtimeconfig.json
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\bin\Debug\net6.0\imdl-check-digit-calculator.dll
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\bin\Debug\net6.0\imdl-check-digit-calculator.pdb
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\obj\Debug\net6.0\imdl-check-digit-calculator.csproj.AssemblyReference.cache
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\obj\Debug\net6.0\imdl-check-digit-calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\obj\Debug\net6.0\imdl-check-digit-calculator.AssemblyInfoInputs.cache
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\obj\Debug\net6.0\imdl-check-digit-calculator.AssemblyInfo.cs
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\obj\Debug\net6.0\imdl-check-digit-calculator.csproj.CoreCompileInputs.cache
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\obj\Debug\net6.0\imdl-check-digit-calculator.dll
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\obj\Debug\net6.0\refint\imdl-check-digit-calculator.dll
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\obj\Debug\net6.0\imdl-check-digit-calculator.pdb
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\obj\Debug\net6.0\imdl-check-digit-calculator.genruntimeconfig.cache
+C:\Users\emily\source\repos\imdl-check-digit-calculator\imdl-check-digit-calculator\obj\Debug\net6.0\ref\imdl-check-digit-calculator.dll
