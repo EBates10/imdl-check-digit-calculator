@@ -49,6 +49,36 @@ namespace imdl_check_digit_calculator.Classes
             const int valueY = 37;
             const int valueZ = 38;
 
+            Dictionary<char, int> letterValues = new Dictionary<char, int>()
+            {
+                {'A', 10 },
+                {'B', 12 },
+                {'C', 13 },
+                {'D', 14 },
+                {'E', 15 },
+                {'F', 16 },
+                {'G', 17 },
+                {'H', 18 },
+                {'I', 19 },
+                {'J', 20 },
+                {'K', 21 },
+                {'L', 23 },
+                {'M', 24 },
+                {'N', 25 },
+                {'O', 26 },
+                {'P', 27 },
+                {'Q', 28 },
+                {'R', 29 },
+                {'S', 30 },
+                {'T', 31 },
+                {'U', 32 },
+                {'V', 34 },
+                {'W', 35 },
+                {'X', 36 },
+                {'Y', 37 },
+                {'Z', 38 }
+            };
+
             int[] multipliers = new int[containerNumber.Length];
             for (int i = 0; i < containerNumber.Length; i++)
             {
@@ -61,107 +91,107 @@ namespace imdl_check_digit_calculator.Classes
             {
                 if (containerNumber[i] == 'A')
                 {
-                    values[i] = valueA;
+                    values[i] = letterValues['A'];
                 }
                 else if (containerNumber[i] == 'B')
                 {
-                    values[i] = valueB;
+                    values[i] = letterValues['B'];
                 }
                 else if (containerNumber[i] == 'C')
                 {
-                    values[i] = valueC;
+                    values[i] = letterValues['C'];
                 }
                 else if (containerNumber[i] == 'D')
                 {
-                    values[i] = valueD;
+                    values[i] = letterValues['D'];
                 }
                 else if (containerNumber[i] == 'E')
                 {
-                    values[i] = valueE;
+                    values[i] = letterValues['E'];
                 }
                 else if (containerNumber[i] == 'F')
                 {
-                    values[i] = valueF;
+                    values[i] = letterValues['F'];
                 }
                 else if (containerNumber[i] == 'G')
                 {
-                    values[i] = valueG;
+                    values[i] = letterValues['G'];
                 }
                 else if (containerNumber[i] == 'H')
                 {
-                    values[i] = valueH;
+                    values[i] = letterValues['H'];
                 }
                 else if (containerNumber[i] == 'I')
                 {
-                    values[i] = valueI;
+                    values[i] = letterValues['I'];
                 }
                 else if (containerNumber[i] == 'J')
                 {
-                    values[i] = valueJ;
+                    values[i] = letterValues['J'];
                 }
                 else if (containerNumber[i] == 'K')
                 {
-                    values[i] = valueK;
+                    values[i] = letterValues['K'];
                 }
                 else if (containerNumber[i] == 'L')
                 {
-                    values[i] = valueL;
+                    values[i] = letterValues['L'];
                 }
                 else if (containerNumber[i] == 'M')
                 {
-                    values[i] = valueM;
+                    values[i] = letterValues['M'];
                 }
                 else if (containerNumber[i] == 'N')
                 {
-                    values[i] = valueN;
+                    values[i] = letterValues['N'];
                 }
                 else if (containerNumber[i] == 'O')
                 {
-                    values[i] = valueO;
+                    values[i] = letterValues['O'];
                 }
                 else if (containerNumber[i] == 'P')
                 {
-                    values[i] = valueP;
+                    values[i] = letterValues['P'];
                 }
                 else if (containerNumber[i] == 'Q')
                 {
-                    values[i] = valueQ;
+                    values[i] = letterValues['Q'];
                 }
                 else if (containerNumber[i] == 'R')
                 {
-                    values[i] = valueR;
+                    values[i] = letterValues['R'];
                 }
                 else if (containerNumber[i] == 'S')
                 {
-                    values[i] = valueS;
+                    values[i] = letterValues['S'];
                 }
                 else if (containerNumber[i] == 'T')
                 {
-                    values[i] = valueT;
+                    values[i] = letterValues['T'];
                 }
                 else if (containerNumber[i] == 'U')
                 {
-                    values[i] = valueU;
+                    values[i] = letterValues['U'];
                 }
                 else if (containerNumber[i] == 'V')
                 {
-                    values[i] = valueV;
+                    values[i] = letterValues['V'];
                 }
                 else if (containerNumber[i] == 'W')
                 {
-                    values[i] = valueW;
+                    values[i] = letterValues['W'];
                 }
                 else if (containerNumber[i] == 'X')
                 {
-                    values[i] = valueX;
+                    values[i] = letterValues['X'];
                 }
                 else if (containerNumber[i] == 'Y')
                 {
-                    values[i] = valueY;
+                    values[i] = letterValues['Y'];
                 }
                 else if (containerNumber[i] == 'Z')
                 {
-                    values[i] = valueZ;
+                    values[i] = letterValues['Z'];
                 }
                 else
                 {
