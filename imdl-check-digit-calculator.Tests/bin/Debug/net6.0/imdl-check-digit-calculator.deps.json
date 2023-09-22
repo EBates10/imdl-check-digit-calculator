@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "imdl-check-digit-calculator/1.0.0": {
+        "runtime": {
+          "imdl-check-digit-calculator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "imdl-check-digit-calculator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

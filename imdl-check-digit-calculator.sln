@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imdl-check-digit-calculator", "imdl-check-digit-calculator\imdl-check-digit-calculator.csproj", "{C83D4D15-4561-443E-95F8-7A0ED50FF8E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "imdl-check-digit-calculator", "imdl-check-digit-calculator\imdl-check-digit-calculator.csproj", "{C83D4D15-4561-443E-95F8-7A0ED50FF8E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imdl-check-digit-calculator.Tests", "imdl-check-digit-calculator.Tests\imdl-check-digit-calculator.Tests.csproj", "{0565F20D-DD45-4490-A244-EE1D6D878754}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C83D4D15-4561-443E-95F8-7A0ED50FF8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C83D4D15-4561-443E-95F8-7A0ED50FF8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C83D4D15-4561-443E-95F8-7A0ED50FF8E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0565F20D-DD45-4490-A244-EE1D6D878754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0565F20D-DD45-4490-A244-EE1D6D878754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0565F20D-DD45-4490-A244-EE1D6D878754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0565F20D-DD45-4490-A244-EE1D6D878754}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

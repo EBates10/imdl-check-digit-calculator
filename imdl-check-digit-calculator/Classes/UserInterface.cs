@@ -29,8 +29,6 @@ namespace imdl_check_digit_calculator.Classes
 
                 isDone = true;
             }
-
-
         }
 
         public static string GetContainerNumber()
@@ -38,9 +36,20 @@ namespace imdl_check_digit_calculator.Classes
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine("Please provide the container number in the format XXXX######: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            string containerNumber = Console.ReadLine().ToUpper();
+            string containerNumber = GetUserInput().ToUpper();
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             return containerNumber;
+        }
+        public static string GetUserInput()
+        {
+            if (Console.ReadLine() != null)
+            {
+                return Console.ReadLine();
+            }
+            else
+            {
+                return "You must provide a valid entry.";
+            }
         }
         private static void DisplayContNumberComponentInfo(string containerPreFix, string eqCategoryIdentifier, string containerSerialNumber)
         {
@@ -63,7 +72,6 @@ namespace imdl_check_digit_calculator.Classes
             Console.WriteLine("The serial number consists of 6 numeric digits, assigned by the owner or operator, uniquely identifying the container within that owner/operator’s fleet.");
             Console.ForegroundColor = ConsoleColor.DarkGreen;
         }
-
         private static void DisplayCheckDigit(int checkDigit)
         {
             Console.ForegroundColor = ConsoleColor.Magenta;
