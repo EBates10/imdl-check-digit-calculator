@@ -31,8 +31,6 @@ namespace imdl_check_digit_calculator.Classes
 
                     isDone = true;
                 }
-
-
             }
         }
 
