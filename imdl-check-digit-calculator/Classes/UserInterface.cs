@@ -17,9 +17,9 @@ namespace imdl_check_digit_calculator.Classes
 
             while (!isDone)
             {
-                string containerNumber = GetContainerNumber().ToUpper();
+                string containerNumber = GetContainerNumber();
                 
-                if (containerNumber.Length == 10)
+                if (containerNumber.Length != 0)
                 {
                     Container container = new Container(containerNumber);
 
@@ -47,7 +47,7 @@ namespace imdl_check_digit_calculator.Classes
             bool serialNumVerified = VerifySerialNumber(userInput);
             if (userInput.Length == 10 && prefixVerified && serialNumVerified)
             {
-                containerNumber = userInput;
+                containerNumber = userInput.ToUpper();
                 return containerNumber;
             }
             else

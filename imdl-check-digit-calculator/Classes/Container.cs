@@ -142,7 +142,7 @@ namespace imdl_check_digit_calculator.Classes
                         values[i] = letterValues['Z'];
                         break;
                     default:
-                        values[i] = Int32.Parse(containerNumber.Substring(i, 1));
+                        values[i] = int.Parse(containerNumber.Substring(i, 1));
                         break;
                 }
             }
