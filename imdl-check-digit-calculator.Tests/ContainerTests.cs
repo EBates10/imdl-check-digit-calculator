@@ -13,7 +13,7 @@ namespace imdl_check_digit_calculator.Tests
     {
         [TestMethod]
         [DataRow("GVTU300038", 9)]
-        [DataRow("WNGU514530", 7), ]
+        [DataRow("WNGU514530", 7)]
         [DataRow("WNGU514560", 5)]
         [DataRow("WNGU514531", 2)]
         [DataRow("TGBU482139", 7)]

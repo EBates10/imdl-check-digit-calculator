@@ -17,42 +17,87 @@ namespace imdl_check_digit_calculator.Classes
 
             while (!isDone)
             {
-                string containerNumber = GetContainerNumber();
+                string containerNumber = GetContainerNumber().ToUpper();
+                
+                if (containerNumber.Length == 10)
+                {
+                    Container container = new Container(containerNumber);
 
-                Container container = new Container(containerNumber); 
+                    DisplayContNumberComponentInfo(container.ContainerPreFix, container.EqCategoryIdentifier, container.ContainerSerialNumber);
 
-                DisplayContNumberComponentInfo(container.ContainerPreFix, container.EqCategoryIdentifier, container.ContainerSerialNumber);
+                    int checkDigit = container.GetCheckDigit(container.ContainerNumber);
 
-                int checkDigit = container.GetCheckDigit(container.ContainerNumber);
+                    DisplayCheckDigit(checkDigit);
 
-                DisplayCheckDigit(checkDigit);
+                    isDone = true;
+                }
 
-                isDone = true;
+
             }
         }
 
         public static string GetContainerNumber()
         {
             Console.ForegroundColor = ConsoleColor.Gray;
-            Console.WriteLine("Please provide the container number in the format XXXX######: ");
+            Console.WriteLine("Please provide the container number in the format XXXX###### (example: TCNU123456): ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            string containerNumber = GetUserInput().ToUpper();
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            return containerNumber;
-        }
-        public static string GetUserInput()
-        {
-            if (Console.ReadLine() != null)
+            string userInput = Console.ReadLine();
+            string containerNumber = "";
+            bool prefixVerified = VerifyPrefix(userInput);
+            bool serialNumVerified = VerifySerialNumber(userInput);
+            if (userInput.Length == 10 && prefixVerified && serialNumVerified)
             {
-                return Console.ReadLine();
+                containerNumber = userInput;
+                return containerNumber;
             }
             else
             {
-                return "You must provide a valid entry.";
+                return containerNumber;
             }
         }
+
+
+        private static bool VerifyPrefix(string userInput)
+        {
+            bool isPrefixLetters = false;
+            string prefix = "";
+            for (int i = 0; i < 4; i++)
+            {
+                if (char.IsLetter(userInput[i]))
+                {
+                    prefix += userInput[i];
+                }
+                if (prefix.Length == 4)
+                {
+                    isPrefixLetters = true;
+                }
+            }
+
+            return isPrefixLetters;
+        }
+        private static bool VerifySerialNumber(string userInput)
+        {
+            bool isSerialNumANumber = false;
+            string serialNum = "";
+            for (int i = 4; i < userInput.Length; i++)
+            {
+                if (char.IsNumber(userInput[i]))
+                {
+                    serialNum += userInput[i];
+                }
+                if (serialNum.Length == 6)
+                {
+                    isSerialNumANumber = true;
+                }
+            }
+
+            return isSerialNumANumber;
+        }
+
+
         private static void DisplayContNumberComponentInfo(string containerPreFix, string eqCategoryIdentifier, string containerSerialNumber)
         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine($"Container Prefix: {containerPreFix}");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("The first 3 letters of the container number indicate the owner code or " +
