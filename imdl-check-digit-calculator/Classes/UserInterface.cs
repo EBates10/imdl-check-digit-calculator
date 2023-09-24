@@ -55,13 +55,13 @@ namespace imdl_check_digit_calculator.Classes
         }
 
 
-        private static bool VerifyPrefix(string userInput)
+        public static bool VerifyPrefix(string userInput)
         {
             bool isPrefixLetters = false;
             string prefix = "";
             for (int i = 0; i < 4; i++)
             {
-                if (char.IsLetter(userInput[i]))
+                if (char.IsLetter(userInput[i]) && (userInput[3] == 'U' || userInput[3] == 'u'))
                 {
                     prefix += userInput[i];
                 }
@@ -73,7 +73,7 @@ namespace imdl_check_digit_calculator.Classes
 
             return isPrefixLetters;
         }
-        private static bool VerifySerialNumber(string userInput)
+        public static bool VerifySerialNumber(string userInput)
         {
             bool isSerialNumANumber = false;
             string serialNum = "";
