@@ -12,6 +12,8 @@ namespace imdl_check_digit_calculator.Classes
         public string ContainerPreFix { get { return ContainerNumber.Substring(0, 3); } }
         public string EqCategoryIdentifier { get { return ContainerNumber.Substring(3, 1); } }
         public string ContainerSerialNumber { get { return ContainerNumber.Substring(4, 6); } }
+        public int ContainerCheckDigit { get { return GetCheckDigit(ContainerNumber); } }
+        public string ContainerNumberWithCheckDigit { get { return ContainerNumber + "-" + ContainerCheckDigit; } }
 
         public Container(string containerNumber)
         {
